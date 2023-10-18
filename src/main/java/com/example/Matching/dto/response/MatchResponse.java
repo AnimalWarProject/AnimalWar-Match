@@ -1,5 +1,6 @@
 package com.example.Matching.dto.response;
 
+import com.example.Matching.domain.User;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
@@ -9,7 +10,7 @@ import java.util.UUID;
 @AllArgsConstructor
 public class MatchResponse {
 
-    private UUID attacker;
-    private UUID depender;
+    private User attacker;
+    private User depender;
 
 }

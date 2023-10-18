@@ -36,13 +36,13 @@ public class User {
 
     private String profileImage;
 
-    @ElementCollection
-    @CollectionTable(name = "user_animals", joinColumns = @JoinColumn(name = "user_uuid"))
-    private List<Long> ownedAnimalIds = new ArrayList<>();
-
-    @ElementCollection
-    @CollectionTable(name = "user_buildings", joinColumns = @JoinColumn(name = "user_uuid"))
-    private List<Long> ownedBuildingIds = new ArrayList<>();
+//    @ElementCollection
+//    @CollectionTable(name = "user_animals", joinColumns = @JoinColumn(name = "user_uuid"))
+//    private List<Long> ownedAnimalIds = new ArrayList<>();
+//
+//    @ElementCollection
+//    @CollectionTable(name = "user_buildings", joinColumns = @JoinColumn(name = "user_uuid"))
+//    private List<Long> ownedBuildingIds = new ArrayList<>();
 
     @Enumerated(EnumType.STRING)
     private Species species;
