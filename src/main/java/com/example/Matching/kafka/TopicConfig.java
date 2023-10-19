@@ -4,5 +4,5 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class TopicConfig {
-    public final static String userTopic = "user";
+    public final static String matchTopic = "match";
 }

@@ -1,14 +1,13 @@
 package com.example.Matching.dto.response;
 
 import com.example.Matching.domain.Species;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 
-@Getter
-@Setter
 @Builder
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class UserResponse {
     private String id;
     private String nickName;
