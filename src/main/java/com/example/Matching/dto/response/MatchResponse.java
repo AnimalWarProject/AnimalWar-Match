@@ -9,7 +9,7 @@ import java.util.UUID;
 @AllArgsConstructor
 public class MatchResponse {
 
-    private UUID attacker;
-    private UUID depender;
+    private UserResponse attacker;
+    private UserResponse depender;
 
 }

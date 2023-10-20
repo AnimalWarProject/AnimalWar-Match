@@ -17,7 +17,7 @@ public class MatchController {
     @PostMapping
     public void randomMatch(@RequestBody MatchRequest matchRequest){
 
-        service.startRandomMatch(matchRequest.getUuid());
+        service.startRandomMatch(matchRequest.getNickname());
     }
 
     @GetMapping

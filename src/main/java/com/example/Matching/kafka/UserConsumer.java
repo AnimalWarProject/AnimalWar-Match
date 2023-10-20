@@ -1,6 +1,5 @@
 package com.example.Matching.kafka;
 
-import com.example.Matching.domain.User;
 import com.example.Matching.dto.response.UserResponse;
 import com.example.Matching.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
@@ -32,6 +31,7 @@ public class UserConsumer {
 //                .species(userResponse.getSpecies())
 //                .build());
 
+        userRepository.save(uuid);
         System.out.println(uuid.getId());
     }
 }

@@ -1,6 +1,8 @@
 package com.example.Matching.dto.response;
 
 import com.example.Matching.domain.Species;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import lombok.*;
 
 
@@ -8,8 +10,11 @@ import lombok.*;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Entity
 public class UserResponse {
+
     private String id;
+    @Id
     private String nickName;
     private int food;
     private int iron;
