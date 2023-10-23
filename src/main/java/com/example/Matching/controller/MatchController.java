@@ -1,6 +1,7 @@
 package com.example.Matching.controller;
 
 import com.example.Matching.dto.request.MatchRequest;
+import com.example.Matching.dto.response.MatchResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 import com.example.Matching.service.MatchService;
@@ -15,9 +16,9 @@ public class MatchController {
     private final MatchService service;
 
     @PostMapping
-    public void randomMatch(@RequestBody MatchRequest matchRequest){
+    public MatchResponse randomMatch(@RequestBody MatchRequest matchRequest){
 
-        service.startRandomMatch(matchRequest.getUuid());
+        return service.startRandomMatch(matchRequest.getUuid());
     }
 
     @GetMapping

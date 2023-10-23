@@ -1,7 +1,7 @@
 package com.example.Matching.service;
 
-import com.example.Matching.domain.User;
 import com.example.Matching.dto.response.MatchResponse;
+import com.example.Matching.dto.response.UserResponse;
 import com.example.Matching.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -15,20 +15,35 @@ public class MatchService {
 
     private final UserRepository userRepository;
 
-    public MatchResponse startRandomMatch(UUID userID) {
+    public MatchResponse startRandomMatch(UUID uuid) {
 
-        List<User> all = userRepository.findAll();
+//        List<UserResponse> all = userRepository.findAll();
+//
+//
+//        int idx = (int) (Math.random() *all.size() + 1);
+//
+//        String depender = all.get(idx).getNickName();
+
+        UserResponse attacker = userRepository.findById(uuid).get();
+
+        UserResponse depender;
+        while(true){
+
+            depender=userRepository.findRandom();
+
+            if(attacker.getUuid()!=depender.getUuid()){
+                break;
+            }
+
+        }
 
 
-        int idx = (int) (Math.random() *all.size() + 1);
-
-        UUID depender = all.get(idx).getUserUUID();
 
         System.out.println(depender);
 
 
 
-        return new MatchResponse(userID,depender);
+        return new MatchResponse(attacker,depender);
 
     }
 }
