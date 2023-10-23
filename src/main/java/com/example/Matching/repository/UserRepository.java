@@ -6,10 +6,11 @@ import org.springframework.data.jpa.repository.Query;
 
 import java.util.UUID;
 
-public interface UserRepository extends JpaRepository<UserResponse, String> {
+public interface UserRepository extends JpaRepository<UserResponse, UUID> {
 
     @Query("SELECT u From UserResponse u order by RAND() limit 1")
     UserResponse findRandom();
 
-    UserResponse findByNickName();
+//    UserResponse findByNickName(String nickname);
+
 }

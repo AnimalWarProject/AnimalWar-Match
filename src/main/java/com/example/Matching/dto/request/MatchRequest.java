@@ -8,6 +8,5 @@ import java.util.UUID;
 @Getter
 public class MatchRequest {
 
-
-    private String nickname;
+    private UUID uuid;
 }

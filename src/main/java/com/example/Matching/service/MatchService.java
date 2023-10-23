@@ -15,7 +15,7 @@ public class MatchService {
 
     private final UserRepository userRepository;
 
-    public MatchResponse startRandomMatch(String userName) {
+    public MatchResponse startRandomMatch(UUID uuid) {
 
 //        List<UserResponse> all = userRepository.findAll();
 //
@@ -24,9 +24,20 @@ public class MatchService {
 //
 //        String depender = all.get(idx).getNickName();
 
-        UserResponse attacker = userRepository.findByNickName();
+        UserResponse attacker = userRepository.findById(uuid).get();
 
-        UserResponse depender = userRepository.findRandom();
+        UserResponse depender;
+        while(true){
+
+            depender=userRepository.findRandom();
+
+            if(attacker.getUuid()!=depender.getUuid()){
+                break;
+            }
+
+        }
+
+
 
         System.out.println(depender);
 
