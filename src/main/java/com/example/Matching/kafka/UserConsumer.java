@@ -1,12 +1,10 @@
 package com.example.Matching.kafka;
 
-import com.example.Matching.dto.response.UserResponse;
+import com.example.Matching.domain.User;
 import com.example.Matching.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
-
-import java.util.UUID;
 
 @Service
 @RequiredArgsConstructor
@@ -16,22 +14,27 @@ public class UserConsumer {
 
 
     @KafkaListener(topics = TopicConfig.matchTopic)
-    public void listen(UserResponse uuid){
-//        userRepository.save(User.builder()
-//                .id(userResponse.getId())
-//                .nickName(userResponse.getNickName())
-//                .food(userResponse.getFood())
-//                .iron(userResponse.getIron())
-//                .wood(userResponse.getWood())
-//                .gold(userResponse.getGold())
-//                .attackPower(userResponse.getAttackPower())
-//                .defensePower(userResponse.getDefensePower())
-//                .battlePoint(userResponse.getBattlePoint())
-//                .profileImage(userResponse.getProfileImage())
-//                .species(userResponse.getSpecies())
-//                .build());
+    public void listen(User user){
 
-        userRepository.save(uuid);
-        System.out.println(uuid.getId());
-    }
+        System.out.println(user.toString());
+
+//        User build = User.builder()
+//                .uuid(user.getUuid())
+//                .id(user.getId())
+//                .nickName(user.getNickName())
+//                .food(user.getFood())
+//                .iron(user.getIron())
+//                .wood(user.getWood())
+//                .gold(user.getGold())
+//                .attackPower(user.getAttackPower())
+//                .defensePower(user.getDefensePower())
+//                .battlePoint(user.getBattlePoint())
+//                .profileImage(user.getProfileImage())
+//                .species(user.getSpecies())
+//                .build();
+
+
+        userRepository.save(user);
+
+        }
 }

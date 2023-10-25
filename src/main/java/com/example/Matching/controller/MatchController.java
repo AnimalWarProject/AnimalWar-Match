@@ -18,8 +18,15 @@ public class MatchController {
     @PostMapping
     public MatchResponse randomMatch(@RequestBody MatchRequest matchRequest){
 
-        return service.startRandomMatch(matchRequest.getUuid());
+        return service.startRandomMatch(matchRequest.getAccessToken());
     }
+
+
+//    @PostMapping
+//    public MatchResponse randomMatch(@RequestBody MatchRequest matchRequest){
+//
+//        return service.startRandomMatch(matchRequest.getToken);
+//    }
 
     @GetMapping
     public void test(){
