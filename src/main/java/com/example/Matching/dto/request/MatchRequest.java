@@ -8,5 +8,5 @@ import java.util.UUID;
 @Getter
 public class MatchRequest {
 
-    private UUID uuid;
+    private String accessToken;
 }

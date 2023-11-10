@@ -1,12 +1,14 @@
 package com.example.Matching.service;
 
+import com.example.Matching.domain.User;
+import com.example.Matching.dto.TokenInfo;
 import com.example.Matching.dto.response.MatchResponse;
-import com.example.Matching.dto.response.UserResponse;
+
 import com.example.Matching.repository.UserRepository;
+import io.jsonwebtoken.Jwt;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
 import java.util.UUID;
 
 @Service
@@ -14,8 +16,9 @@ import java.util.UUID;
 public class MatchService {
 
     private final UserRepository userRepository;
+    private final JwtService jwtService;
 
-    public MatchResponse startRandomMatch(UUID uuid) {
+    public MatchResponse startRandomMatch(String accessToken) {
 
 //        List<UserResponse> all = userRepository.findAll();
 //
@@ -24,24 +27,16 @@ public class MatchService {
 //
 //        String depender = all.get(idx).getNickName();
 
-        UserResponse attacker = userRepository.findById(uuid).get();
+        TokenInfo tokenInfo = jwtService.parseAccessToken(accessToken);
 
-        UserResponse depender;
-        while(true){
+        User attacker = userRepository.findById(tokenInfo.getUserUUID()).orElseThrow(
+                ()->new RuntimeException("No Attacker")
+        );
 
-            depender=userRepository.findRandom();
-
-            if(attacker.getUuid()!=depender.getUuid()){
-                break;
-            }
-
-        }
-
-
-
+        User depender = userRepository.findRandom(tokenInfo.getUserUUID()).orElseThrow(
+                ()->new RuntimeException("No Depender")
+        );
         System.out.println(depender);
-
-
 
         return new MatchResponse(attacker,depender);
 

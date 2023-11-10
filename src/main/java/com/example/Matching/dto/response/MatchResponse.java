@@ -1,15 +1,14 @@
 package com.example.Matching.dto.response;
 
+import com.example.Matching.domain.User;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-
-import java.util.UUID;
 
 @Data
 @AllArgsConstructor
 public class MatchResponse {
 
-    private UserResponse attacker;
-    private UserResponse depender;
+    private User attacker;
+    private User depender;
 
 }
