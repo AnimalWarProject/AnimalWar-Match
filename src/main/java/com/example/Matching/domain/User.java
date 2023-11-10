@@ -25,6 +25,7 @@ public class User {
     private int wood;
     private int gold;
 
+    private int life;
     private int attackPower;
     private int defensePower;
     private int battlePoint;

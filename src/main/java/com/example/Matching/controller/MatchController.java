@@ -16,9 +16,9 @@ public class MatchController {
     private final MatchService service;
 
     @PostMapping
-    public MatchResponse randomMatch(@RequestBody MatchRequest matchRequest){
+    public MatchResponse randomMatch(@RequestHeader("Authorization") String accessToken){
 
-        return service.startRandomMatch(matchRequest.getAccessToken());
+        return service.startRandomMatch(accessToken.replace("Bearer ", ""));
     }
 
 
