@@ -18,7 +18,7 @@ public class SkillService {
 
     @Transactional
     public void changeAttackerSkill(AttackerSkillChangeRequest request, UUID userId) {
-        Optional<User> optionalUser = userRepository.findByUserUUID(userId);
+        Optional<User> optionalUser = userRepository.findByUuid(userId);
         if (optionalUser.isPresent()) {
             User user = optionalUser.get();
             user.setAttackerAttackTypeSkill(request.getAttackerAttackTypeSkill());
@@ -31,7 +31,7 @@ public class SkillService {
 
     @Transactional
     public void changeDefenderSkill(DefenderSkillChangeRequest request , UUID userId) {
-        Optional<User> optionalUser = userRepository.findByUserUUID(userId);
+        Optional<User> optionalUser = userRepository.findByUuid(userId);
 
         if (optionalUser.isPresent()) {
             User user = optionalUser.get();

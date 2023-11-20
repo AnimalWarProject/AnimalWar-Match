@@ -23,8 +23,8 @@ public class SkillController {
     public void changeAttackerSkill(@RequestHeader("Authorization") String accessToken,
                                     @RequestBody AttackerSkillChangeRequest request){
         TokenInfo tokenInfo = jwtService.parseAccessToken(accessToken.replace("Bearer " , ""));
-        UUID userUUID = tokenInfo.getUserUUID();
-        skillService.changeAttackerSkill(request, userUUID);
+        UUID uuId = tokenInfo.getUserUUID();
+        skillService.changeAttackerSkill(request, uuId);
     }
 
     //  해당 사용자의 수비자 스킬이 변경
@@ -32,7 +32,7 @@ public class SkillController {
     public void changeDefenderSkill(@RequestHeader("Authorization") String accessToken,
                                     @RequestBody DefenderSkillChangeRequest request){
         TokenInfo tokenInfo = jwtService.parseAccessToken(accessToken.replace("Bearer " , ""));
-        UUID userUUID = tokenInfo.getUserUUID();
-        skillService.changeDefenderSkill(request, userUUID);
+        UUID uuid = tokenInfo.getUserUUID();
+        skillService.changeDefenderSkill(request, uuid);
     }
 }

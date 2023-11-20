@@ -30,10 +30,14 @@ public class JwtService {
         User user = userRepository.findById(userUUID).orElse(null);
 
 
-        return TokenInfo.builder()
-                .userUUID(user.getUuid())
-                .id(user.getId())
-                .nickName(user.getNickName())
-                .build();
+        if (user != null) {
+            return TokenInfo.builder()
+                    .userUUID(user.getUuid())
+                    .id(user.getId())
+                    .nickName(user.getNickName())
+                    .build();
+        } else {
+            return null;
+        }
     }
 }
