@@ -9,6 +9,8 @@ import java.util.UUID;
 
 public interface UserRepository extends JpaRepository<User, UUID> {
 
+    Optional<User> findByUuid(UUID uuid);
+
     @Query("SELECT u From User u" +
             " where u.uuid!=:uuid order by RAND() limit 1")
     Optional<User> findRandom(UUID uuid);
