@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.Matching.MatchingApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-10-25T06:58:56" hostname="LAPTOP-HPB7RSTJ" time="1.579">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.example.Matching.MatchingApplicationTests" time="1.579"/>
+  <system-out><![CDATA[15:58:43.848 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.Matching.MatchingApplicationTests]: MatchingApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:58:43.971 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.Matching.MatchingApplication for test class com.example.Matching.MatchingApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.4)
+
+2023-10-25T15:58:45.534+09:00  INFO 19812 --- [    Test worker] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2023-10-25T15:58:46.435+09:00  INFO 19812 --- [    Test worker] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=token, profiles=[prod], label=null, version=2d2b8d215036796c76f9b5bafc14cc61ca344f16, state=null
+2023-10-25T15:58:46.436+09:00  INFO 19812 --- [    Test worker] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/AnimalWarProject/AnimalWar-configdata.git/token-prod.yml'}]
+2023-10-25T15:58:46.459+09:00  INFO 19812 --- [    Test worker] c.e.Matching.MatchingApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2023-10-25T15:58:46.994+09:00  INFO 19812 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-25T15:58:47.805+09:00  INFO 19812 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 800 ms. Found 1 JPA repository interfaces.
+2023-10-25T15:58:48.294+09:00  INFO 19812 --- [    Test worker] o.s.cloud.context.scope.GenericScope     : BeanFactory id=43cf9d83-445a-3510-ad8e-6de6199d2fc4
+2023-10-25T15:58:48.752+09:00  INFO 19812 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-25T15:58:48.822+09:00  INFO 19812 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-25T15:58:48.824+09:00  INFO 19812 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-25T15:58:49.764+09:00  INFO 19812 --- [    Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-25T15:58:50.134+09:00  INFO 19812 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-25T15:58:50.157+09:00  INFO 19812 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-25T15:58:50.474+09:00  INFO 19812 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@683ed81b
+2023-10-25T15:58:50.477+09:00  INFO 19812 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-25T15:58:50.763+09:00  INFO 19812 --- [    Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-25T15:58:52.117+09:00  INFO 19812 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-25T15:58:52.157+09:00  INFO 19812 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25T15:58:52.485+09:00  INFO 19812 --- [    Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-10-25T15:58:54.078+09:00  WARN 19812 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-25T15:58:55.646+09:00  INFO 19812 --- [    Test worker] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-10-25T15:58:55.823+09:00  WARN 19812 --- [    Test worker] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-10-25T15:58:55.889+09:00  INFO 19812 --- [    Test worker] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-10-25T15:58:56.016+09:00  INFO 19812 --- [    Test worker] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-10-25T15:58:56.022+09:00  INFO 19812 --- [    Test worker] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-10-25T15:58:56.046+09:00  INFO 19812 --- [    Test worker] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-10-25T15:58:56.046+09:00  INFO 19812 --- [    Test worker] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-10-25T15:58:56.046+09:00  INFO 19812 --- [    Test worker] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-10-25T15:58:56.047+09:00  INFO 19812 --- [    Test worker] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-10-25T15:58:56.047+09:00  INFO 19812 --- [    Test worker] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-10-25T15:58:56.047+09:00  INFO 19812 --- [    Test worker] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-10-25T15:58:56.047+09:00  INFO 19812 --- [    Test worker] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-10-25T15:58:56.321+09:00  INFO 19812 --- [    Test worker] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-10-25T15:58:56.324+09:00  INFO 19812 --- [    Test worker] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-10-25T15:58:56.328+09:00  INFO 19812 --- [    Test worker] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-10-25T15:58:56.336+09:00  INFO 19812 --- [    Test worker] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1698217136335 with initial instances count: 3
+2023-10-25T15:58:56.341+09:00  INFO 19812 --- [    Test worker] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MATCH-SERVICE with eureka with status UP
+2023-10-25T15:58:56.342+09:00  INFO 19812 --- [    Test worker] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1698217136342, current=UP, previous=STARTING]
+2023-10-25T15:58:56.344+09:00  INFO 19812 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MATCH-SERVICE/match-service:45a4831dbff1778f6f79339a0f76f8db: registering service...
+2023-10-25T15:58:56.391+09:00  INFO 19812 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MATCH-SERVICE/match-service:45a4831dbff1778f6f79339a0f76f8db - registration status: 204
+2023-10-25T15:58:56.393+09:00  INFO 19812 --- [    Test worker] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-user-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = user
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+2023-10-25T15:58:56.501+09:00  INFO 19812 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.4.1
+2023-10-25T15:58:56.501+09:00  INFO 19812 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 8a516edc2755df89
+2023-10-25T15:58:56.501+09:00  INFO 19812 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1698217136499
+2023-10-25T15:58:56.504+09:00  INFO 19812 --- [    Test worker] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-user-1, groupId=user] Subscribed to topic(s): match
+2023-10-25T15:58:56.533+09:00  INFO 19812 --- [    Test worker] c.e.Matching.MatchingApplicationTests    : Started MatchingApplicationTests in 12.381 seconds (process running for 14.5)
+2023-10-25T15:58:57.733+09:00  INFO 19812 --- [ntainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-user-1, groupId=user] Resetting the last seen epoch of partition match-0 to 0 since the associated topicId changed from null to BYjxcrKFTK-ajS7cAXEKnw
+2023-10-25T15:58:57.736+09:00  INFO 19812 --- [ntainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-user-1, groupId=user] Cluster ID: 1ut-tXPHQWquqamZkAB7cg
+2023-10-25T15:58:57.739+09:00  INFO 19812 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-user-1, groupId=user] Discovered group coordinator LAPTOP-HPB7RSTJ:9092 (id: 2147483647 rack: null)
+2023-10-25T15:58:57.747+09:00  INFO 19812 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-user-1, groupId=user] (Re-)joining group
+2023-10-25T15:58:57.759+09:00  INFO 19812 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-user-1, groupId=user] Request joining group due to: need to re-join with the given member-id: consumer-user-1-8b15663d-dad8-4951-8714-b2f462899f71
+2023-10-25T15:58:57.759+09:00  INFO 19812 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-user-1, groupId=user] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+2023-10-25T15:58:57.759+09:00  INFO 19812 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-user-1, groupId=user] (Re-)joining group
+2023-10-25T15:58:57.762+09:00  INFO 19812 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-user-1, groupId=user] Successfully joined group with generation Generation{generationId=57, memberId='consumer-user-1-8b15663d-dad8-4951-8714-b2f462899f71', protocol='range'}
+2023-10-25T15:58:57.765+09:00  INFO 19812 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-user-1, groupId=user] Finished assignment for group at generation 57: {consumer-user-1-8b15663d-dad8-4951-8714-b2f462899f71=Assignment(partitions=[match-0])}
+2023-10-25T15:58:57.770+09:00  INFO 19812 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-user-1, groupId=user] Successfully synced group in generation Generation{generationId=57, memberId='consumer-user-1-8b15663d-dad8-4951-8714-b2f462899f71', protocol='range'}
+2023-10-25T15:58:57.771+09:00  INFO 19812 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-user-1, groupId=user] Notifying assignor about the new Assignment(partitions=[match-0])
+2023-10-25T15:58:57.775+09:00  INFO 19812 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-user-1, groupId=user] Adding newly assigned partitions: match-0
+2023-10-25T15:58:57.787+09:00  INFO 19812 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-user-1, groupId=user] Setting offset for partition match-0 to the committed offset FetchPosition{offset=47, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[LAPTOP-HPB7RSTJ:9092 (id: 0 rack: null)], epoch=0}}
+2023-10-25T15:58:57.804+09:00  INFO 19812 --- [ntainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : user: partitions assigned: [match-0]
+Hibernate: insert into user (attack_power,battle_point,defense_power,food,gold,id,iron,nick_name,profile_image,species,wood,uuid) values (?,?,?,?,?,?,?,?,?,?,?,?)
+thkim8
+Hibernate: insert into user (attack_power,battle_point,defense_power,food,gold,id,iron,nick_name,profile_image,species,wood,uuid) values (?,?,?,?,?,?,?,?,?,?,?,?)
+thkim8
+Hibernate: insert into user (attack_power,battle_point,defense_power,food,gold,id,iron,nick_name,profile_image,species,wood,uuid) values (?,?,?,?,?,?,?,?,?,?,?,?)
+thkim1
+Hibernate: insert into user (attack_power,battle_point,defense_power,food,gold,id,iron,nick_name,profile_image,species,wood,uuid) values (?,?,?,?,?,?,?,?,?,?,?,?)
+thkim2
+Hibernate: insert into user (attack_power,battle_point,defense_power,food,gold,id,iron,nick_name,profile_image,species,wood,uuid) values (?,?,?,?,?,?,?,?,?,?,?,?)
+thkim3
+Hibernate: insert into user (attack_power,battle_point,defense_power,food,gold,id,iron,nick_name,profile_image,species,wood,uuid) values (?,?,?,?,?,?,?,?,?,?,?,?)
+thkim4
+Hibernate: insert into user (attack_power,battle_point,defense_power,food,gold,id,iron,nick_name,profile_image,species,wood,uuid) values (?,?,?,?,?,?,?,?,?,?,?,?)
+thkim5
+Hibernate: insert into user (attack_power,battle_point,defense_power,food,gold,id,iron,nick_name,profile_image,species,wood,uuid) values (?,?,?,?,?,?,?,?,?,?,?,?)
+thkim7
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,11 +1,9 @@
 package com.example.Matching.controller;
 
-import com.example.Matching.dto.request.MatchRequest;
+import com.example.Matching.dto.response.MatchResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 import com.example.Matching.service.MatchService;
-
-import java.util.UUID;
 
 @RestController
 @RequestMapping("api/v1/match")
@@ -15,10 +13,11 @@ public class MatchController {
     private final MatchService service;
 
     @PostMapping
-    public void randomMatch(@RequestBody MatchRequest matchRequest){
+    public MatchResponse randomMatch(@RequestHeader("Authorization") String accessToken){
 
-        service.startRandomMatch(matchRequest.getUuid());
+        return service.startRandomMatch(accessToken.replace("Bearer ", ""));
     }
+
 
     @GetMapping
     public void test(){
