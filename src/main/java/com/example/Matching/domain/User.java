@@ -17,7 +17,6 @@ import java.util.UUID;
 public class User {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
     private UUID uuid;
 
     private String id;
@@ -28,6 +27,7 @@ public class User {
     private int gold;
 
     private int life;
+    private int maxLife;
     private int attackPower;
     private int defensePower;
     private int battlePoint;
