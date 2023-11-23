@@ -7,8 +7,6 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 public class MatchResponse {
-
     private User attacker;
     private User depender;
-
 }
