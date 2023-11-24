@@ -7,8 +7,7 @@
     <list default="true" id="431c7bf5-95cb-4c0e-aa6d-dd239e2ecb67" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Matching/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Matching/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Matching/kafka/UserConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Matching/kafka/UserConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,7 +216,8 @@
       <workItem from="1700611511434" duration="894000" />
       <workItem from="1700628218140" duration="2997000" />
       <workItem from="1700701591387" duration="6309000" />
-      <workItem from="1700788650750" duration="6854000" />
+      <workItem from="1700788650750" duration="8673000" />
+      <workItem from="1700841238514" duration="2658000" />
     </task>
     <servers />
   </component>
@@ -231,11 +231,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/example/Matching/MatchingApplication.java</url>
           <line>8</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/Matching/kafka/UserConsumer.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
