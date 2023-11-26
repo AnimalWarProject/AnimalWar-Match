@@ -1151,6 +1151,7 @@ test|schema||playdata|localhost|UPDATE|G</Grants>
       <Host>localhost</Host>
       <Plugin>caching_sha2_password</Plugin>
     </user>
+
     <table id="331" parent="323" name="user">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
