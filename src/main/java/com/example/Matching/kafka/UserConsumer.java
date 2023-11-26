@@ -6,6 +6,8 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 @Service
 @RequiredArgsConstructor
 public class UserConsumer {
@@ -32,8 +34,6 @@ public class UserConsumer {
 //                .profileImage(user.getProfileImage())
 //                .species(user.getSpecies())
 //                .build();
-
-
         userRepository.save(user);
 
         }

@@ -6,6 +6,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.*;
+import org.hibernate.annotations.DynamicUpdate;
 
 import java.util.UUID;
 
@@ -22,10 +23,7 @@ public class User {
 
     private String id;
     private String nickName;
-    private int food;
-    private int iron;
-    private int wood;
-    private int gold;
+
 
     private int life;
     private int maxLife;
@@ -68,4 +66,5 @@ public class User {
     public void setDefenderUtilityTypeSkill(String defenderUtilityTypeSkill) {
         this.defenderUtilityTypeSkill = defenderUtilityTypeSkill;
     }
+
 }

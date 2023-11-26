@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="431c7bf5-95cb-4c0e-aa6d-dd239e2ecb67" name="변경" comment="">
+
       <change afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/AnimalWar-match.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
@@ -68,25 +69,7 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
 
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/23bceb9a-0c0d-4a0e-9d61-58bce11bc04a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/23bceb9a-0c0d-4a0e-9d61-58bce11bc04a.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/Matching/controller/MatchController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/Matching/controller/MatchController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/Matching/domain/User$UserBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/Matching/domain/User$UserBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/Matching/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/Matching/domain/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/Matching/dto/request/DefenderSkillChangeRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/Matching/dto/request/DefenderSkillChangeRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/Matching/dto/response/MatchResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/Matching/dto/response/MatchResponse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/Matching/service/MatchService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/Matching/service/MatchService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/JwtService.class.uniqueId1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/MatchController.class.uniqueId0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/MatchService.class.uniqueId2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/SkillController.class.uniqueId3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Matching/controller/MatchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Matching/controller/MatchController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Matching/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Matching/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Matching/dto/request/DefenderSkillChangeRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Matching/dto/request/DefenderSkillChangeRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Matching/dto/response/MatchResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Matching/dto/response/MatchResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Matching/service/MatchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Matching/service/MatchService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -295,7 +278,9 @@
       <workItem from="1700525963129" duration="1389000" />
       <workItem from="1700611511434" duration="894000" />
       <workItem from="1700628218140" duration="2997000" />
-      <workItem from="1700701591387" duration="4236000" />
+      <workItem from="1700701591387" duration="6309000" />
+      <workItem from="1700788650750" duration="8673000" />
+      <workItem from="1700841238514" duration="2658000" />
     </task>
     <servers />
   </component>
