@@ -15,6 +15,4 @@ public interface UserRepository extends JpaRepository<User, UUID> {
             " where u.uuid!=:uuid order by RAND() limit 1")
     Optional<User> findRandom(UUID uuid);
 
-//    UserResponse findByNickName(String nickname);
-
 }

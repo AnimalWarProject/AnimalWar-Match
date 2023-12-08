@@ -6,8 +6,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
 
-import java.util.Optional;
-
 @Service
 @RequiredArgsConstructor
 public class UserConsumer {
@@ -19,21 +17,6 @@ public class UserConsumer {
     public void listen(User user){
 
         System.out.println(user.toString());
-
-//        User build = User.builder()
-//                .uuid(user.getUuid())
-//                .id(user.getId())
-//                .nickName(user.getNickName())
-//                .food(user.getFood())
-//                .iron(user.getIron())
-//                .wood(user.getWood())
-//                .gold(user.getGold())
-//                .attackPower(user.getAttackPower())
-//                .defensePower(user.getDefensePower())
-//                .battlePoint(user.getBattlePoint())
-//                .profileImage(user.getProfileImage())
-//                .species(user.getSpecies())
-//                .build();
         userRepository.save(user);
 
         }
