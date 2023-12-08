@@ -1,7 +1,6 @@
 package com.example.Matching.dto.response;
 
 import com.example.Matching.domain.Species;
-import com.example.Matching.domain.User;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
@@ -25,20 +24,4 @@ public class UserResponse {
 
     private Species species;
 
-    static public UserResponse ConvertDto(User user){
-
-        return UserResponse.builder()
-                .id(user.getId())
-                .nickName(user.getNickName())
-                .food(user.getFood())
-                .iron(user.getIron())
-                .wood(user.getWood())
-                .gold(user.getGold())
-                .attackPower(user.getAttackPower())
-                .defensePower(user.getDefensePower())
-                .battlePoint(user.getBattlePoint())
-                .profileImage(user.getProfileImage())
-                .species(user.getSpecies())
-                .build();
-    }
 }

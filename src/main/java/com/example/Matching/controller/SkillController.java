@@ -17,8 +17,6 @@ public class SkillController {
     private final SkillService skillService;
     private final JwtService jwtService;
 
-
-    //  해당 사용자의 공격자 스킬이 변경
     @PutMapping("/changeAttackerSkill")
     public void changeAttackerSkill(@RequestHeader("Authorization") String accessToken,
                                     @RequestBody AttackerSkillChangeRequest request){
@@ -26,8 +24,6 @@ public class SkillController {
         UUID uuId = tokenInfo.getUserUUID();
         skillService.changeAttackerSkill(request, uuId);
     }
-
-    //  해당 사용자의 수비자 스킬이 변경
     @PutMapping("/changeDefenderSkill")
     public void changeDefenderSkill(@RequestHeader("Authorization") String accessToken,
                                     @RequestBody DefenderSkillChangeRequest request){

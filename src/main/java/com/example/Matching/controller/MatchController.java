@@ -11,17 +11,10 @@ import com.example.Matching.service.MatchService;
 public class MatchController {
 
     private final MatchService service;
-
     @PostMapping
     public MatchResponse randomMatch(@RequestHeader("Authorization") String accessToken){
         System.out.println(accessToken);
 
         return service.startRandomMatch(accessToken.replace("Bearer ", ""));
-    }
-
-
-    @GetMapping
-    public void test(){
-
     }
 }
